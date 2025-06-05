@@ -14,7 +14,7 @@ export default function CreateAd() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    api.get('/admin/coins')
+    api.get('/coins')
       .then(res => setCoins(res.data))
       .catch(console.error);
   }, []);
